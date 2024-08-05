@@ -15,7 +15,7 @@ const UserSignup = () => {
         try {
             setError(null);
             setLoading(true);
-            const res = await fetch('http://localhost:3000/api/auth/signup', {
+            const res = await fetch('https://backend-api-27i3.vercel.app/api/auth/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(values),

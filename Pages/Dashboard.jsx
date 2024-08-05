@@ -28,7 +28,7 @@ const Dashboard = () => {
             redirect: 'follow'
           };
         // console.log("hello world!")
-    fetch('http://localhost:3000/api/auth/image/upload',requestOptions)
+    fetch('https://backend-api-27i3.vercel.app/api/auth/image/upload',requestOptions)
      .then(response => response.text())
       .then(result => alert("Image Upload Successfuly"))
       .catch(error => console.log('error', error));
@@ -49,7 +49,7 @@ const Dashboard = () => {
          body: formdata,
          redirect: 'follow'
        };
-       fetch('http://localhost:3000/api/auth/image/upload1', requestOptions)
+       fetch('https://backend-api-27i3.vercel.app/api/auth/image/upload1', requestOptions)
       .then(response => response.json())
       .then(result => {
         setfirst(result.photo)
