@@ -24,6 +24,7 @@ const Dashboard = () => {
     
         const requestOptions = {
             method: 'POST',
+            mode: 'no-cors',
             body: formdata,
             redirect: 'follow'
           };
